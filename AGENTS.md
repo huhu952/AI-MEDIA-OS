@@ -37,3 +37,19 @@
 
 - yt-dlp 仅用于有权获取或平台允许的内容。
 - 生成内容遵守平台规则与版权要求；AI 生成内容按平台要求标注。
+
+## Phase 0 基础设施约定（2026-08-16）
+
+- 项目状态以 STATUS.md 为准（SYSTEM_STATUS.md 保留为环境基线报告）。
+- 账号档案：accounts/account_registry.md 为唯一登记处；禁止记录身份证号 / 密码 / Cookie /
+  验证码 / 完整手机号；账号类操作一律先问用户。
+- 内容实验：database/content_experiments.sqlite（schema.sql + 模板 CSV + scripts/content_db.py）；
+  每个作品发布后由用户提供后台数据，Codex 负责记录 / 清洗 / 比较 / 统计。
+- AI 成本：analytics/ai_costs.csv 记录每次重要 AI 调用；衡量口径为“最终可用作品成本”。
+- 模型分层：简单任务（文件整理 / 格式转换 / 数据清洗）用最低成本模型或本地工具；
+  中等任务（Prompt 优化 / 普通代码 / 视频分析）用中档模型；
+  高价值任务（复杂策略 / 核心剧本 / 关键视觉 / 最终审核）才用最高能力模型。
+- 生产纪律：禁止“纯文字 → 视频 → 无限抽卡”；按 workflows/SHORT_VIDEO_PIPELINE.md
+  先角色 / 场景 / 分镜，再关键帧 → 图生视频。
+- Phase 0 禁止：发布、登录平台、删除 / 修改平台作品、购买订阅、大量付费 API、
+  下载大模型、模拟真人养号。

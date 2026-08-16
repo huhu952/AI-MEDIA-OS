@@ -9,6 +9,7 @@
 - 安装日志：[INSTALLATION_LOG.md](INSTALLATION_LOG.md)
 - 系统状态：[SYSTEM_STATUS.md](SYSTEM_STATUS.md)
 - 项目约定：[AGENTS.md](AGENTS.md)
+- 项目状态：[STATUS.md](STATUS.md)
 
 ## 目录
 
@@ -22,6 +23,12 @@
 | scripts/ | 一次性/维护脚本 |
 | configs/ | 模型路由、Provider 配置、环境变量模板 |
 | database/ | 本地结构化数据（选题库、内容库、竞品库） |
+| accounts/ | 账号档案：account_registry.md 为唯一登记处 |
+| strategy/ | 账号策略 / 商业化 / 实验计划 |
+| assets/ | 图片 / 视频 / 音频 / 音乐 / 字体素材 |
+| scenes/ | 场景设定与参考图 |
+| storyboards/ | 分镜脚本 |
+| analytics/ | AI 成本账本（ai_costs.csv）与数据复盘 |
 | references/ | 参考资料、平台规范、竞品存档 |
 | characters/ | 角色设定与一致性资产 |
 | projects/ | 每个具体项目的独立工作目录 |

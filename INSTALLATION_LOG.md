@@ -69,3 +69,11 @@
 > `codex mcp add playwright -- npx -y @playwright/mcp@latest`
 
 > 本文件由主 Codex 维护，随每个组件安装即时更新。
+
+## 2026-08-16 Phase 0 基础设施补齐（无新增安装）
+
+- 新增目录：accounts/、strategy/、assets/、scenes/、storyboards/、analytics/（+ outputs 平台子目录）。
+- 新增文件：accounts/account_registry.md、database/schema.sql + content_experiments_template.csv +
+  scripts/content_db.py、analytics/ai_costs.csv、workflows/SHORT_VIDEO_PIPELINE.md、STATUS.md。
+- 校验：`node scripts/validate_project.js`（目录 / 文件 / 表头 / gitignore 检查）通过。
+- 说明：content_experiments.sqlite 由 `python scripts/content_db.py init` 生成，不入 Git。

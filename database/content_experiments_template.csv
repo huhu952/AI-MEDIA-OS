@@ -1,0 +1,2 @@
+content_id,platform,publish_date,series,topic,content_type,duration,hook_type,visual_style,characters,generation_models,image_generation_count,video_generation_count,failed_generation_count,estimated_image_cost,estimated_video_cost,estimated_audio_cost,total_cost,production_time,views,likes,comments,shares,favorites,followers_gained,three_second_retention,completion_rate,revenue,notes
+EXAMPLE-000,抖音,2026-08-16,示例系列,模板示例,竖屏短视频,30,悬念提问,写实3D,"角色A;角色B","gpt-image-2;sora-2",6,3,2,3.0,18.0,2.0,23.0,120,0,0,0,0,0,0,0.0,0.0,0.0,"模板示例行：导入前请删除，勿当作真实作品"

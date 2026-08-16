@@ -49,6 +49,18 @@ database/*.sqlite*
 *.gif
 !**/*.gitkeep
 
+# 例外：角色/场景参考图等小型设计资产允许入库（管线一致性关键资产）
+!assets/images/character_refs/
+!assets/images/character_refs/**/*.png
+!assets/images/character_refs/**/*.jpg
+!assets/images/character_refs/**/*.jpeg
+!assets/images/character_refs/**/*.webp
+!assets/images/scene_refs/
+!assets/images/scene_refs/**/*.png
+!assets/images/scene_refs/**/*.jpg
+!assets/images/scene_refs/**/*.jpeg
+!assets/images/scene_refs/**/*.webp
+
 # Codex / tooling
 .codex/
 .agents/
